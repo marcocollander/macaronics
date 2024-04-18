@@ -2,6 +2,7 @@ const Contact = () => (
     <div className="contact-us">
         <p>Contact Us</p>
         <p>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             If you have an enquiry about any of our products, we'd love to hear from
             you.
         </p>
