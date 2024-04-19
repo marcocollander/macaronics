@@ -25,8 +25,12 @@ process:
   this is probably the easiest)
 
 There is one crucial point I also need to cover: although we are installing Sanity, this is only to host data.
-Administering our account/Sanity setup is done remotely via the dashboard in our account on the Sanity website. Keep 
+Administering our account/Sanity setup is done remotely via the dashboard in our account on the Sanity website. Keep
 this
-thought in mind as we install Sanity as part of the next exercise. 
+thought in mind as we install Sanity as part of the next exercise.
 
 ## Installing Sanity
+
+Installing Sanity is very easy - it's written for Node/NPM, so it will use a reasonably familiar process, at least for
+those who use Node.js. Everything is done via command line, so you will need to have installed Node.js and NPM first;
+assuming you have done so ( or already had it installed), let's continue with the setup process

@@ -27,3 +27,9 @@ Administrowanie naszym kontem/konfiguracją Sanity odbywa się zdalnie za pośre
 Sanity. Pamiętaj o tej myśli, instalując Sanity w ramach następnego ćwiczenia.
 
 ## Instalowanie Sanity
+
+Instalowanie zdrowego rozsądku
+
+Instalacja Sanity jest bardzo łatwa — została napisana dla Node/NPM, więc będzie korzystać z dość znanego procesu,
+przynajmniej dla tych, którzy korzystają z Node.js. Wszystko odbywa się za pomocą wiersza poleceń, więc najpierw musisz
+zainstalować Node.js i NPM; zakładając, że już to zrobiłeś (lub masz już zainstalowany), kontynuujmy proces instalacji  
