@@ -8,7 +8,7 @@ import {
 import { Info } from '../../components';
 
 import { client, urlFor } from '@/lib/client';
-import Product from '../../components/Product';
+import Product from '@/components/Product';
 import { useStateContext } from '@/context/StateContext';
 
 const ProductDetails = ({ product, products }) => {
@@ -30,6 +30,7 @@ const ProductDetails = ({ product, products }) => {
                         <img
                             src={urlFor(image && image[index])}
                             className='product-detail-image'
+                            alt={'Product detail'}
                         />
                     </div>
                     <div className='small-images-container'>
@@ -43,6 +44,7 @@ const ProductDetails = ({ product, products }) => {
                                         : 'small-image'
                                 }
                                 onMouseEnter={() => setIndex(i)}
+                                alt={'Selected image'}
                             />
                         ))}
                     </div>
@@ -87,15 +89,13 @@ const ProductDetails = ({ product, products }) => {
                         <button
                             type='button'
                             className='add-to-cart'
-                            onClick={() => onAdd(product, qty)}
-                        >
+                            onClick={() => onAdd(product, qty)}>
                             Add do Cart
                         </button>
                         <button
                             type='button'
                             className='buy-now'
-                            onClick={handleByNow}
-                        >
+                            onClick={handleByNow}>
                             Buy Now
                         </button>
                     </div>

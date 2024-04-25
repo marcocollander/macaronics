@@ -9,8 +9,7 @@ const Contact = () => (
         <form
             action='/send-data-here'
             method='post'
-            className='contact-us-form'
-        >
+            className='contact-us-form'>
             <p>Fields marked with a * are required</p>
             <label htmlFor='fullname'>Your full name:</label>
             <div className='contact-field'>
@@ -42,8 +41,7 @@ const Contact = () => (
                     rows='5'
                     cols='60'
                     name='enquiry'
-                    placeholder='Your enquiry...'
-                ></textarea>
+                    placeholder='Your enquiry...'></textarea>
             </div>
             <button type='submit' className='contact-submit'>
                 Submit

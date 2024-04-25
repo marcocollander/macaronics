@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import perfect from '@/../public/perfect.jpg';
+import perfect from '@/../public/images/perfect.jpg';
 
 export default function PerfectBanner() {
     return (
@@ -8,7 +8,7 @@ export default function PerfectBanner() {
                 <Image
                     src={perfect}
                     alt='perfect occasion'
-                    width={442}
+                    width={320}
                     height={532}
                 />
             </div>

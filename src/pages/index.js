@@ -2,10 +2,15 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Newsletter from '@/components/Newsletter';
 import PerfectBanner from '@/components/PerfectBanner';
+import { NextSeo } from 'next-seo';
 
 export default function Home() {
     return (
         <>
+            <NextSeo
+                title='Macaron Magic'
+                description='Great tasting home-made macarons'
+            />
             <Head>
                 <title>Demo shop</title>
                 <meta
@@ -14,15 +19,15 @@ export default function Home() {
                 />
                 <meta
                     name='viewport'
-                    content='width=device-width, initial-scale=1'
+                    content='width=device-width, initial-scale=1.0'
                 />
-                <link rel='icon' href='/favicon.ico' />
+                <link rel='icon' href='/favicon/favicon.ico' />
             </Head>
             <div className='frontLogo'>
-                <div className='baner'>
-                    <span className='tagLine'>
-                        Luxury macarons made by hand
-                    </span>
+                <div className='banner'>
+                    <span>Luxury</span>
+                    <span>macaroons made</span>
+                    <span>by hand</span>
                     <Link className='shop-now' href='/shop'>
                         Shop now
                     </Link>

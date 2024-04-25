@@ -1,14 +1,21 @@
 import Image from 'next/image';
-import newsletter from '@/../public/newsletter.jpg';
+import newsletter from '@/../public/images/newsletter.jpg';
 
 export default function Newsletter() {
     return (
         <div className='newsletter'>
+            <span className='newsletter-image'>
+                <Image
+                    src={newsletter}
+                    alt='newsletter'
+                    width={320}
+                    heiht={150}
+                />
+            </span>
             <form
                 action='/send-data-here'
                 method='post'
-                className='email-signup'
-            >
+                className='email-signup'>
                 <span>Join our Newsletter</span>
                 <input
                     type='text'
@@ -30,14 +37,6 @@ export default function Newsletter() {
                 />
                 <button type='submit'>Submit</button>
             </form>
-            <span className='newsletter-image'>
-                <Image
-                    src={newsletter}
-                    alt='newsletter'
-                    width={500}
-                    heiht={500}
-                />
-            </span>
         </div>
     );
 }
