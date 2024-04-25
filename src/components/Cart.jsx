@@ -46,8 +46,7 @@ const Cart = () => {
                 <button
                     type='button'
                     className='cart-heading'
-                    onClick={() => setShowCart(false)}
-                >
+                    onClick={() => setShowCart(false)}>
                     <AiOutlineLeft />
                     <span className='heading'>Your Cart</span>
                     <span className='cart-num-items'>
@@ -61,8 +60,7 @@ const Cart = () => {
                             <button
                                 type='button'
                                 onClick={() => setShowCart(false)}
-                                className='btn'
-                            >
+                                className='btn'>
                                 Continue Shopping
                             </button>
                         </Link>
@@ -76,8 +74,7 @@ const Cart = () => {
                                 <button
                                     type='button'
                                     className='remove-item'
-                                    onClick={() => onRemove(item)}
-                                >
+                                    onClick={() => onRemove(item)}>
                                     <TiDeleteOutline />
                                 </button>
                                 <img
@@ -101,8 +98,7 @@ const Cart = () => {
                                                     item._id,
                                                     'dec',
                                                 )
-                                            }
-                                        >
+                                            }>
                                             <AiOutlineMinus />
                                         </span>
                                         <span
@@ -112,8 +108,7 @@ const Cart = () => {
                                                     item._id,
                                                     'inc',
                                                 )
-                                            }
-                                        >
+                                            }>
                                             <AiOutlinePlus />
                                         </span>
                                     </p>
@@ -131,8 +126,7 @@ const Cart = () => {
                             <button
                                 type='button'
                                 className='btn'
-                                onClick={handleCheckout}
-                            >
+                                onClick={handleCheckout}>
                                 Pay with Stripe
                             </button>
                         </div>
