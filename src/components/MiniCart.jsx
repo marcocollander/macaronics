@@ -53,7 +53,7 @@ const MiniCart = () => {
                         <div className='product' key={item._id}>
                             <span>
                                 <img
-                                    alt={'mini cart image'}
+                                    alt='mini cart image'
                                     src={urlFor(item?.image[0])}
                                     className='mini-cart-image'
                                 />
