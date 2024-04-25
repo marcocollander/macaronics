@@ -78,8 +78,7 @@ const MiniCart = () => {
                         <button
                             type='button'
                             className='btn'
-                            onClick={handleCheckout}
-                        >
+                            onClick={handleCheckout}>
                             Pay with Stripe
                         </button>
                     </div>

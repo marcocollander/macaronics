@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run --browser chrome --headless",
+    "cypress:component": "cypress run --component"
+
   },
   "dependencies": {
     "@sanity/client": "^6.15.17",
